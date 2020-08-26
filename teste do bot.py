@@ -2,6 +2,7 @@ import random as r
 import time
 from selenium.webdriver.common.keys import Keys
 from selenium import webdriver
+#no path cole o caminho do driver instalado, eu gosto de colocar no programs file x86
 path = "c:\Program Files (x86)\chromedriver.exe"
 driver = webdriver.Chrome(path)
 driver.get("https://www.google.com/accounts/Login?hl=pt-BR")
@@ -32,12 +33,13 @@ def automatico():
 
             f += 1
 
-def comandos():
-    driver.get(link)
-    trava_de_seguranca = float(input("aperte 0 para começar"))
-    reapeater = True
-    if trava_de_seguranca == 0:
-        while reapeater == True :
-            chat = driver.find_element_by_class_name("vvTMTb")
-            print(chat.text)
-comandos()
+#def comandos():
+#    driver.get(link)
+#    trava_de_seguranca = float(input("aperte 0 para começar"))
+#    reapeater = True
+#    if trava_de_seguranca == 0:
+#        while reapeater == True :
+#            chat = driver.find_element_by_class_name("vvTMTb")
+#            print(chat.text)
+#comandos()
+automatico()
